@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80'); /* professional office background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            max-width: 400px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="password"], input[type="date"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form action="Sucess.html" method="post">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Professional Logo"> 
+        <h1>Registration Form</h1>
+        <label>First Name:</label>
+        <input type="text" name="firstname" required>
+        <label>Last Name:</label>
+        <input type="text" name="lastname" required>
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <label>Username:</label>
+        <input type="text" name="username" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <label>Confirm Password:</label>
+        <input type="password" name="confirmpassword" required>
+        <label>State:</label>
+        <input type="text" name="state" required>
+        <label>Country:</label>
+        <select name="country" required>
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Australia">Australia</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
